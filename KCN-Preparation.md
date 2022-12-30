@@ -43,6 +43,9 @@ break down your app in smaller pieces which makes them more manageable.
   Horizontal scaling: spawning new compute resources (new copies). \
   Vertical scaling: Change in size within certain hardware limits. 
   > To illustrate the difference between scaling vertically and horizontally, imagine that you have to carry a heavy object that you cannot pick up. You can build muscle to carry it yourself, but your body has an upper limit of strength. That's vertical scaling. You can also call your friends and ask them to help you and share the work. That's horizontal scaling.
+  Configurations: minimum & maximum limit of instances, metric that triggers the scaling -> tune -> run many load tests, analyze the behavior and load balancing while scaled.
+* Serverless\
+  
 ## High level architecture of Kubernetes
 ## Container Orchestration (CO)
 ## How CO differes from legacy deployments 
