@@ -34,6 +34,7 @@ break down your app in smaller pieces which makes them more manageable.
   Calls for different security models for different teams and users. For ex, __Zero trust computing__
 
 
+### 4. Starting point example: [the 12-factor app](https://12factor.net/)
 ## High level architecture of Kubernetes
 ## Container Orchestration (CO)
 ## How CO differes from legacy deployments 
