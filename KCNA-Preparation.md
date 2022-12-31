@@ -61,8 +61,6 @@ break down your app in smaller pieces which makes them more manageable.
   Service Mesh Interface (SMI): Ap specification on how to implement Service Meshes in container orchestration systems with a focus on Kubernetes.
   
   
-  
-
 ## High level architecture of Kubernetes
 ## Container Orchestration (CO)
 ### 1. Container vs Virtual Machines
@@ -76,10 +74,24 @@ break down your app in smaller pieces which makes them more manageable.
   VM emulate a complete machine, including the OS and a kernel (greater isolation, with some overhead caused by boot time)\
   Containers share the kernel of the host machines and are only isolated processes (faster and smaller footprint)
   <img width="628" alt="image" src="https://user-images.githubusercontent.com/24993672/210155962-79cb2ac6-14c2-4fef-b2f9-186437d495d1.png">
+  <img width="565" alt="image" src="https://user-images.githubusercontent.com/24993672/210156165-d1b59d56-d0e5-4088-9710-17444539a43c.png">
 
-  
-  
+
 ### 2. Fundamentals of Container Orchestration
+  > Container orchestration systems provide a way to build a cluster of multiple servers and host the containers on top
+  Most container orchestration systems consist of two parts
+  * __Control Plane__ (management of the containers)
+  * __Worker Nodes__ (host the containers)
+  The problems to be solved:\
+  * Providing compute resources like virtual machines where containers can run on
+  * Schedule containers to servers in an efficient way
+  * Allocate resources like CPU and memory to containers
+  * Manage the availability of containers and replace them if they fail
+  * Scale containers if load increases
+  * Provide networking to connect containers together
+  * Provision storage if containers need to persist data.
+
+
 ### 3. Challenges of Container Networking and Storage
 ### 4. Service Mesh
 
