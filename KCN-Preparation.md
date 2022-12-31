@@ -53,7 +53,14 @@ break down your app in smaller pieces which makes them more manageable.
   <img width="970" alt="image" src="https://user-images.githubusercontent.com/24993672/210119489-191c2ab1-4b92-481b-87bd-0d6a9a530b04.png">
   > Writing small, stateless applications make them a perfect fit for event or data streams, scheduled tasks, business logic or batch processing.
 * Open Standards\
-  How to build and distribute software packages? Containers (with Docker) -- [Open Container Initiative](https://opencontainers.org/) (OCI)
+  How to build and distribute software packages? Containers (with Docker) -- [Open Container Initiative](https://opencontainers.org/) (OCI): image, runtime and distribution specification on how to run, build an distribute containers\
+  __Some Other Standards__:\
+  Container Network Interface (CNI): A specification on how to implement networking for Containers.\
+  Container Runtime Interface (CRI): A specification on how to implement container runtimes in container orchestration systems.\
+  Container Storage Interface (CSI):A specification on how to implement storage in container orchestration systems.\
+  Service Mesh Interface (SMI): Ap specification on how to implement Service Meshes in container orchestration systems with a focus on Kubernetes.
+  
+  
   
 
 ## High level architecture of Kubernetes
