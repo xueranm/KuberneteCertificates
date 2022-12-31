@@ -65,6 +65,18 @@ break down your app in smaller pieces which makes them more manageable.
 
 ## High level architecture of Kubernetes
 ## Container Orchestration (CO)
+### 1. Container vs Virtual Machines
+
+
+* Containers\
+  Legacy way to run an app on a server: install and configure the basic OS, install the Core PL(for ex python) packages to run the program, install PL extensions that your program uses, configure networking for your system, connect to third party systems like a database, cache or storage.\
+  Then VM comes.\
+  Containers lower the overhead: Managing the dependencies of an application and running much more efficiently than spinning up a lot of virtual machines.
+### 2. Fundamentals of Container Orchestration
+### 3. Challenges of Container Networking and Storage
+### 4. Service Mesh
+
+
 ## How CO differes from legacy deployments 
 
 
