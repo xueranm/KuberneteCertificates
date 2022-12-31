@@ -100,6 +100,10 @@ break down your app in smaller pieces which makes them more manageable.
   To allow __communication between containers across host__, use overlay network which puts them in a __virtual network__ across the host systems.\
   <img width="595" alt="image" src="https://user-images.githubusercontent.com/24993672/210156392-3296e702-fd3c-4f26-80ef-ed6fd3370fcf.png">\
   Container Network Interface (CNI)
+  * Service Discovery & DNS
+  > Instead of having a manually maintained list of servers (or in this case containers), all the information is put in a __Service Registry__. Finding other services in the network and requesting information about them is called __Service Discovery__.
+  Approaches to Service Discovery:\
+  1. DNS
 
   
 ### 4. Service Mesh
