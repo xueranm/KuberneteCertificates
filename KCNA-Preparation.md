@@ -108,6 +108,23 @@ break down your app in smaller pieces which makes them more manageable.
 
   
 ### 4. Service Mesh
+  * Proxy: Manage network traffic (nginx, haproxy or envoy)
+  <img width="558" alt="image" src="https://user-images.githubusercontent.com/24993672/210157122-6ca0f187-1e87-46c3-bc0b-a11ba4c5861f.png"> [Istio Architecture](https://istio.io/v1.10/docs/ops/deployment/architecture/)
+  > The proxies in a service mesh form the data plane. This is where networking rules are implemented and shape the traffic flow.
+
+  > These rules are managed centrally in the control plane of the service mesh. This is where you define how traffic flows from service A to service B and what configuration should be applied to the proxies.
+   Service Mesh Interface (SMI)
+   * Storage
+     Container and its storage are ephemeral. As pic, the R/W layer is lost when container is stopped or deleted. 
+     <img width="626" alt="image" src="https://user-images.githubusercontent.com/24993672/210157290-b9a3cb9b-dd49-41f8-982f-2da2d1ad7e8a.png">\
+     To Persist data on a host, use __volume__: 
+     > Instead of isolating the whole filesystem of a process, directories that reside on the host are passed through into the container filesystem
+     <img width="605" alt="image" src="https://user-images.githubusercontent.com/24993672/210157354-0de3684b-8cd9-45a8-adfe-e5f63573d6c0.png">\
+     Data is shared between containers on the same host. Storage is provisioned via a central storage system. Containers on Server A and Server B can share a volume to read and write data\
+     Container Storage Interface (CSI) 
+     
+
+
 
 
 ## How CO differes from legacy deployments 
