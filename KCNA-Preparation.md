@@ -79,6 +79,7 @@ break down your app in smaller pieces which makes them more manageable.
 
 ### 2. Fundamentals of Container Orchestration
   > Container orchestration systems provide a way to build a cluster of multiple servers and host the containers on top
+  Microservice architecture
   Most container orchestration systems consist of two parts
   * __Control Plane__ (management of the containers)
   * __Worker Nodes__ (host the containers)
@@ -93,6 +94,14 @@ break down your app in smaller pieces which makes them more manageable.
 
 
 ### 3. Challenges of Container Networking and Storage
+  * Networking
+  Each continer has its own unique IP address thus they can open the __same network port__.\
+  To make app __accessible from outside the host system__, containers can map a port from the container to a a port from the host system. \
+  To allow __communication between containers across host__, use overlay network which puts them in a __virtual network__ across the host systems.\
+  <img width="595" alt="image" src="https://user-images.githubusercontent.com/24993672/210156392-3296e702-fd3c-4f26-80ef-ed6fd3370fcf.png">\
+  Container Network Interface (CNI)
+
+  
 ### 4. Service Mesh
 
 
