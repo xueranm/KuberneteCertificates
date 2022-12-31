@@ -104,6 +104,7 @@ break down your app in smaller pieces which makes them more manageable.
   > Instead of having a manually maintained list of servers (or in this case containers), all the information is put in a __Service Registry__. Finding other services in the network and requesting information about them is called __Service Discovery__.
   Approaches to Service Discovery:\
   1. DNS
+  2. Key-Value-Store
 
   
 ### 4. Service Mesh
