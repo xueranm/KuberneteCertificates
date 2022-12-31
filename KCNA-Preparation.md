@@ -72,6 +72,13 @@ break down your app in smaller pieces which makes them more manageable.
   Legacy way to run an app on a server: install and configure the basic OS, install the Core PL(for ex python) packages to run the program, install PL extensions that your program uses, configure networking for your system, connect to third party systems like a database, cache or storage.\
   Then VM comes.\
   Containers lower the overhead: Managing the dependencies of an application and running much more efficiently than spinning up a lot of virtual machines.
+* Difference between VM and Container\
+  VM emulate a complete machine, including the OS and a kernel (greater isolation, with some overhead caused by boot time)\
+  Containers share the kernel of the host machines and are only isolated processes (faster and smaller footprint)
+  <img width="628" alt="image" src="https://user-images.githubusercontent.com/24993672/210155962-79cb2ac6-14c2-4fef-b2f9-186437d495d1.png">
+
+  
+  
 ### 2. Fundamentals of Container Orchestration
 ### 3. Challenges of Container Networking and Storage
 ### 4. Service Mesh
