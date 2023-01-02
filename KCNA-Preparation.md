@@ -129,7 +129,7 @@ break down your app in smaller pieces which makes them more manageable.
    <img width="714" alt="image" src="https://user-images.githubusercontent.com/24993672/210282591-5952f531-27f9-4cdd-a5e6-0e5590c61c55.png">
    
    __Control Plane__
-   1. Kube-apiserver: where user access the cluster and other components interact with 
+   1. [Kube-apiserver](#kubernetes-api-kube-apiserver-restful-inerface-over-https): where user access the cluster and other components interact with 
    2. etcd: a database that holds the state of the cluster, a standalone project 
    3. kube-scheduler: Based on different properties like CPU and memory, it chooses new worker node to fit new workload 
    4. kube-controller-manager: container different non-terminating control loops (like control flow within lifecycle?) that manager the state of the cluster
