@@ -102,17 +102,19 @@ break down your app in smaller pieces which makes them more manageable.
   Container Network Interface (CNI)
   * Service Discovery & DNS
   > Instead of having a manually maintained list of servers (or in this case containers), all the information is put in a __Service Registry__. Finding other services in the network and requesting information about them is called __Service Discovery__.
-  Approaches to Service Discovery:\
+  
+  Approaches to Service Discovery:
   1. DNS
   2. Key-Value-Store
 
   
 ### 4. Service Mesh
   * Proxy: Manage network traffic (nginx, haproxy or envoy)
+  
   <img width="558" alt="image" src="https://user-images.githubusercontent.com/24993672/210157122-6ca0f187-1e87-46c3-bc0b-a11ba4c5861f.png"> [Istio Architecture](https://istio.io/v1.10/docs/ops/deployment/architecture/)
   > The proxies in a service mesh form the data plane. This is where networking rules are implemented and shape the traffic flow.
 
-  > These rules are managed centrally in the control plane of the service mesh. This is where you define how traffic flows from service A to service B and what configuration should be applied to the proxies.
+  > These rules are managed centrally in the control plane of the service mesh. This is where you define how traffic flows from service A to service B and what configuration should be applied to the proxies.\
    Service Mesh Interface (SMI)
    * Storage
      Container and its storage are ephemeral. As pic, the R/W layer is lost when container is stopped or deleted. 
@@ -151,6 +153,28 @@ break down your app in smaller pieces which makes them more manageable.
    1. Authentication: require identity. For ex, digital signed certificate. Kubernetes users: external identity; Technical users: Service Accounts
    2. Authorization: Decide what the requester is allowed to do. Kubernetes Role Based Access Control (RBAC)
    3. Admission Control: used to modify or validate the request. For ex, Open Policy Agen (OPA) can be used to manage admission control externally
+
+
+  ### Running Containers on Kubernetes
+  * Kubernete translate the pod (the smallest compute unit) into a running container, image the pod as a wrapper around a container
+  * Several container runtime: containerd, docker, CRI-O
+  * Flow:
+  <img width="740" alt="image" src="https://user-images.githubusercontent.com/24993672/210285382-0fa02069-9fda-4e0a-b68a-cc6672d5759a.png">
+  <img width="756" alt="image" src="https://user-images.githubusercontent.com/24993672/210285467-47246a90-fa50-4f5f-98d3-caf7acd71cb7.png">
+  
+  
+  ### Networking
+  
+  * Container-to-Container communications
+  * Pod-to-Pod communications
+  * Pod-to-Service communications
+  * External-to-Service communicatioins
+  
+  [High level solutions](#3-challenges-of-container-networking-and-storage)
+  > Most Kubernetes setups include a DNS server add-on called __core-dns__, which can provide service discovery and name resolution inside the cluster
+  
+
+
    
    
    
