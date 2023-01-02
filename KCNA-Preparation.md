@@ -144,7 +144,7 @@ break down your app in smaller pieces which makes them more manageable.
    
    
    * Kubernetes API (kube-apiserver: RESTful inerface over HTTPS)
-   <img width="727" alt="image" src="https://user-images.githubusercontent.com/24993672/210284285-4e1f9e9c-fc51-45eb-ada3-a4647c6063cd.png">
+   <img width="727" alt="image" src="https://user-images.githubusercontent.com/24993672/210284285-4e1f9e9c-fc51-45eb-ada3-a4647c6063cd.png">\
    1. Authentication: require identity. For ex, digital signed certificate. Kubernetes users: external identity; Technical users: Service Accounts
    2. Authorization: Decide what the requester is allowed to do. Kubernetes Role Based Access Control (RBAC)
    3. Admission Control: used to modify or validate the request. For ex, Open Policy Agen (OPA) can be used to manage admission control externally
