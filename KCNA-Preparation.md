@@ -128,17 +128,27 @@ break down your app in smaller pieces which makes them more manageable.
    * Architecture
    <img width="714" alt="image" src="https://user-images.githubusercontent.com/24993672/210282591-5952f531-27f9-4cdd-a5e6-0e5590c61c55.png">\
    __Control Plane__
-   1. Kube-apiserver: where user access the cluster and other components interact with 
+   1. [Kube-apiserver](#L146): where user access the cluster and other components interact with 
    2. etcd: a database that holds the state of the cluster, a standalone project 
    3. kube-scheduler: Based on different properties like CPU and memory, it chooses new worker node to fit new workload 
    4. kube-controller-manager: container different non-terminating control loops (like control flow within lifecycle?) that manager the state of the cluster
    5. cloud-controller-manager (optional): interact with the API of cloud providers to create external resources like load balancers, storage or security groups (for ex, aws resources)\
+   
+   
    __Worker Nodes__
    1. container runtime: used to run the containers on the worker node, for ex Docker
    2. kubelet: a small agent on every worker node, it talks to the api-server and container runtime to handle the final stage of starting containers
    3. kube-proxy: network proxy for inside/outside communication of the cluster\
    __One Pro__ of the separation design is even the control plane is not available, the started applications on worker nodes will continue to run\
    __Kubernete namespaces__ is used to divide a cluster into multiple virtual clusters (multi-tenancy)
+   
+   
+   * Kubernetes API (kube-apiserver: RESTful inerface over HTTPS)
+   <img width="727" alt="image" src="https://user-images.githubusercontent.com/24993672/210284285-4e1f9e9c-fc51-45eb-ada3-a4647c6063cd.png">
+   1. Authentication: require identity. For ex, digital signed certificate. Kubernetes users: external identity; Technical users: Service Accounts
+   2. Authorization: Decide what the requester is allowed to do. Kubernetes Role Based Access Control (RBAC)
+   3. Admission Control: used to modify or validate the request. For ex, Open Policy Agen (OPA) can be used to manage admission control externally
+   
    
    
 ## How CO differes from legacy deployments 
