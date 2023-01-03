@@ -1,5 +1,5 @@
 # KCNA Preparation 
-## Pre-Knowledge/Skills requirements
+## Pre-Knowledge/Skills requirements (LFS250)
 
 
 <img width="479" alt="image" src="https://user-images.githubusercontent.com/24993672/210115793-3dfc5f75-37d3-458a-85c9-c4f64dd89e9f.png">
