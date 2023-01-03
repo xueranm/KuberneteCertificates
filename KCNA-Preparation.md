@@ -133,7 +133,7 @@ break down your app in smaller pieces which makes them more manageable.
    __Control Plane__
    1. [Kube-apiserver](#kubernetes-api-kube-apiserver-restful-inerface-over-https): where user access the cluster and other components interact with 
    2. etcd: a database that holds the state of the cluster, a standalone project 
-   3. kube-scheduler: Based on different properties like CPU and memory, it chooses new worker node to fit new workload 
+   3. [kube-scheduler](KCNA-Preparation.md#scheduling-kube-scheduler): Based on different properties like CPU and memory, it chooses new worker node to fit new workload 
    4. kube-controller-manager: container different non-terminating control loops (like control flow within lifecycle?) that manager the state of the cluster
    5. cloud-controller-manager (optional): interact with the API of cloud providers to create external resources like load balancers, storage or security groups (for ex, aws resources)
    
@@ -173,7 +173,13 @@ break down your app in smaller pieces which makes them more manageable.
   [High level solutions](#3-challenges-of-container-networking-and-storage)
   > Most Kubernetes setups include a DNS server add-on called __core-dns__, which can provide service discovery and name resolution inside the cluster
   
-
+  
+  ### Scheduling (kube-scheduler)
+  
+  * Makes the scheduling decision, but not start the workload
+  * After user declares the configurations, the scheduler will use that information to filter all nodes that fit these requirements. If multiple nodes fit the requirements equally, Kubernetes will schedule the Pod on the node with the least amount of Pods
+  * If the desired state cannot be established, the scheduler will retry to find an appropriate node until the state can be established.
+  
 
    
    
