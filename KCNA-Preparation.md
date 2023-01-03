@@ -180,6 +180,34 @@ break down your app in smaller pieces which makes them more manageable.
   * After user declares the configurations, the scheduler will use that information to filter all nodes that fit these requirements. If multiple nodes fit the requirements equally, Kubernetes will schedule the Pod on the node with the least amount of Pods
   * If the desired state cannot be established, the scheduler will retry to find an appropriate node until the state can be established.
   
+  
+## Kubernetes Objects, Purposes, Interactions
+
+  ### Kubernetes Objects
+  
+  1. Workload-oriented Objects (handle container workoads)
+  2. Infrastructure-oriented Objects (handle configuration, networking and security)
+  
+  * Required fileds: apiVersion, kind, metadata, spec
+
+  For more details, see Kubernetes official doc. 
+  
+  ### Interaction
+  
+  * kubectl
+    ~~~~
+    kubectl api-resources
+    kubectl explain pod
+    kubectl explain pod.spec
+    ~~~~
+  * Helm
+    > package manager for Kubernetes, which allows easier updates and interaction with objects
+
+
+  
+  ### Pod
+  ### Scale and Schedule Pods with workload resources
+  ### Abstract Pods with services and expose them
 
    
    
