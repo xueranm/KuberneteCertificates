@@ -242,6 +242,9 @@ __Ingress Object__
 
   Cluster internal firewall: __NetworkPolicy__ -- IP firewall that can control traffic based on rules
   
+__Volume & Storage Objects__
+
+  
 
 
   ### Scale and Schedule Pods with workload resources
