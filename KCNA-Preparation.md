@@ -199,13 +199,23 @@ break down your app in smaller pieces which makes them more manageable.
     kubectl api-resources
     kubectl explain pod
     kubectl explain pod.spec
+    kubectl config view
+    kubectl --help
     ~~~~
   * Helm
     > package manager for Kubernetes, which allows easier updates and interaction with objects
 
-
   
   ### Pod
+  
+  > A pod describes a unit of one or more containers that share an isolation layer of namespaces and cgroups
+  <img width="690" alt="image" src="https://user-images.githubusercontent.com/24993672/210287436-654dbdcc-598f-47ca-bb76-7beb2f28783f.png">
+
+  * sidecar container: second container that supports the main application
+  * initContainers: to start containers before your main application starts
+  * Important settings for every container: resources, livenessProbe, securityContext
+
+
   ### Scale and Schedule Pods with workload resources
   ### Abstract Pods with services and expose them
 
