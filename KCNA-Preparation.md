@@ -192,7 +192,7 @@ break down your app in smaller pieces which makes them more manageable.
 
   For more details, see Kubernetes official doc. 
   
-  ### Interaction
+__Interaction__
   
   * kubectl
     ~~~~
@@ -201,12 +201,12 @@ break down your app in smaller pieces which makes them more manageable.
     kubectl explain pod.spec
     kubectl config view
     kubectl --help
+    kubectl get pod -o wide
     ~~~~
   * Helm
     > package manager for Kubernetes, which allows easier updates and interaction with objects
 
-  
-  ### Pod
+__Pod__
   
   > A pod describes a unit of one or more containers that share an isolation layer of namespaces and cgroups
   <img width="690" alt="image" src="https://user-images.githubusercontent.com/24993672/210287436-654dbdcc-598f-47ca-bb76-7beb2f28783f.png">
@@ -214,6 +214,34 @@ break down your app in smaller pieces which makes them more manageable.
   * sidecar container: second container that supports the main application
   * initContainers: to start containers before your main application starts
   * Important settings for every container: resources, livenessProbe, securityContext
+
+__Workload Objects__
+
+  * ReplicaSet
+  * Deployment
+  * StatefulSet
+  * DaemonSet: Used for infrastructure-related workload, for ex, monitoring or logging tools
+  * Job
+  * CronJob
+  
+  Visualization tools: KubeView\
+  
+__Networking Objects__
+
+  * ClusterIP: virtual IP that can be used as a single endpoint for a set of pods, can be used as a round-robin load balancer
+  <img width="466" alt="image" src="https://user-images.githubusercontent.com/24993672/210288368-277a335e-fef8-4502-8998-4cebb0fbaf9c.png">
+  
+  * NodePort: extends the ClusterIP by adding simple routing rules, opens a port on every node and maps it to the ClusterIP. Allow routing external traffic to the cluster
+  * LoadBalancer: extends the NodePort by deploying an external LoadBalancer instance
+  * ExternalName: uses Kubernete internal DNS server to create a DNS alias 
+  
+__Ingress Object__
+
+  > Ingress provides a means to expose HTTP and HTTPS routes from outside of the cluster for a service within the cluster. It does this by configuring routing rules that a user can set and implement with an ingress controller.
+  <img width="619" alt="image" src="https://user-images.githubusercontent.com/24993672/210288783-e41ca5cc-785b-44b2-b7f8-5c894584af51.png">
+
+  Cluster internal firewall: __NetworkPolicy__ -- IP firewall that can control traffic based on rules
+  
 
 
   ### Scale and Schedule Pods with workload resources
