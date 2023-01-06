@@ -86,7 +86,8 @@ break down your app in smaller pieces which makes them more manageable.
   Most container orchestration systems consist of two parts
   * __Control Plane__ (management of the containers)
   * __Worker Nodes__ (host the containers)
-  The problems to be solved:\
+  * 
+  The problems to be solved:
   * Providing compute resources like virtual machines where containers can run on
   * Schedule containers to servers in an efficient way
   * Allocate resources like CPU and memory to containers
