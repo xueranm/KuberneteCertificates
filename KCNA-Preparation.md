@@ -48,9 +48,11 @@ break down your app in smaller pieces which makes them more manageable.
   Infrastructure as a Service\
   Platform as a Service\
   Function as a Service\
-  <img width="921" alt="image" src="https://user-images.githubusercontent.com/24993672/210119211-2c3be7d5-3186-490f-953d-0e190e41678f.png">\
+  <img width="921" alt="image" src="https://user-images.githubusercontent.com/24993672/210119211-2c3be7d5-3186-490f-953d-0e190e41678f.png">
+  
   __Serverless architecture example__
   <img width="970" alt="image" src="https://user-images.githubusercontent.com/24993672/210119489-191c2ab1-4b92-481b-87bd-0d6a9a530b04.png">
+  
   > Writing small, stateless applications make them a perfect fit for event or data streams, scheduled tasks, business logic or batch processing.
 * Open Standards\
   How to build and distribute software packages? Containers (with Docker) -- [Open Container Initiative](https://opencontainers.org/) (OCI): image, runtime and distribution specification on how to run, build an distribute containers\
@@ -80,6 +82,7 @@ break down your app in smaller pieces which makes them more manageable.
 ### 2. Fundamentals of Container Orchestration
   > Container orchestration systems provide a way to build a cluster of multiple servers and host the containers on top
   Microservice architecture
+  
   Most container orchestration systems consist of two parts
   * __Control Plane__ (management of the containers)
   * __Worker Nodes__ (host the containers)
