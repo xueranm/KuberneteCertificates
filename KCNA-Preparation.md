@@ -259,6 +259,17 @@ __Volume & Storage Objects__
 Example
 <img width="627" alt="image" src="https://user-images.githubusercontent.com/24993672/211174956-50cd1134-8ed0-42f1-9614-08eb375a87f5.png">
 
+__Configuration Objects__
+
+  > Suggestion: [Storing configuration in the environment](https://12factor.net/config)
+
+  Kubernete: decoupling the configuration from the pods with a ConfigMap\
+  Usage:\
+  * Mount ConfigMap as a volume in Pod
+  * Map variables from a ConfigMap to env variables of a Pod
+
+  Similar Object to ConfigMaps --  __Secrets__ base64 encoded.
+  
 
 
 
