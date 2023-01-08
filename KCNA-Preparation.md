@@ -248,6 +248,23 @@ __Ingress Object__
   
 __Volume & Storage Objects__
 
+  > __Volumes__ allow sharing data between multiple containers within the same Pod (great for sidecar pattern, preventing data loss when a pod crashes)
+  >  A cluster environment with multiple servers requires even more flexibility when it comes to __persistent storage__
+
+  Container Storage Interface (CSI): allows the storage vendor to write a plugin (storage driver) that can be used in Kubernetes\
+  Two Objects that use this abstraction:
+  * PersistentVollumes (PV): configurations that holds information like type of volume, volume size, access mode and unique identifiers and info how to mount it
+  * PersistentVolumeClaims (PVC): Request for storage by a user, can reserve a PV
+
+Example
+<img width="627" alt="image" src="https://user-images.githubusercontent.com/24993672/211174956-50cd1134-8ed0-42f1-9614-08eb375a87f5.png">
+
+
+
+
+  
+  
+
   
 
 
