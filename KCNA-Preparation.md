@@ -270,6 +270,15 @@ __Configuration Objects__
 
   Similar Object to ConfigMaps --  __Secrets__ base64 encoded.
   
+__Autoscaling Objects__
+
+  * Horizontal Pod Autoscaler (HPA)
+    To use, need to install an add-on called __metrics-server__.
+  * Cluster Autoscaler
+  * Vertical Pod Autoscaler
+  
+  To distinguish them,  refer [here](#5-knowledge-points)
+
 
 
 
