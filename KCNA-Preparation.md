@@ -322,9 +322,45 @@ __Observability__
          - stdin: file descriptors 0
          - stdout: 1
          - stderr: 2
+         __Logs of containerized processes__ are stored inside __/dev/stdout or /dev/stderr__ (which can be accessed by commands of some command line tools like docker or kubectl or podman).\
+         For example, to view the logs of a container named ngix
+         ~~~~
+         docker logs nginx -f # Option -f to stream the logs in real time
+         kubectl logs nginx # Pod nginx with only one container
+         
+         kubectl logs -p -c ruby web-1 # Return snapshot of previous terminated ruby container logs from pod web-1
+         kubectl logs --tail=20 nginx # Display only the most recent 20 lines of output in pod nginx
+         kubectl logs --since=1h nginx # Show all logs from pod nginx written in the last hour
+         ~~~~
+         
+         To Manage the huge amount of data, these logs need to be shipped to a system that stores the logs. To __ship the logs__, different methods are below:
+         - Node-level logging: An admin configures a log shipping tool to collect logs and ships them to a central store
+         - Logging via sidecar container: Use a sidecar container to collect and ship the logs to a central store
+         - Application-level logging: Configure the logging adapter in every app in the cluster and app can push the logs directly to the central store
+       
+         __Tools__: fluentd or filebeat can do first two methods. OpenSearch or Grafana Loki can store logs. 
+         To make logs easy to process and searchable, use __structured logging__ (for ex, use structured format like JSON).
+         
       2. __Metrics__: Quantitative measurements taken over time. For ex, num of requests or an error rate.
       3. __Traces__: Progression of a request while it's passing thru the system. Are used in a distributed system to provide info about when a request was procssed and how long it took
+     
+     
+  * Prometheus (open source monitoring system)
+    > It can collect metrics that were emitted by apps and servers as time series data
     
+    Prometheus data model provides 4 core metrics:
+    1. Counter: Increasing value, ex. request or error count
+    2. Gauge: Increasing or decreasing value, ex. memory size
+    3. Histogram: A sample of observations, ex. request duration or response size
+    4. Summary: Extension of histogram, also provides total count of observations
+
+    Query lanugage used by Prometheus is __PromQL__ (Prometheus Query Language)\
+    __Ecosystem tools__\
+    __Grafana__ can be used to build dashboards from the collected metrics\
+    __Alertmanager__ Alert monitoring and notification 
+    
+    
+           
   
 
 
