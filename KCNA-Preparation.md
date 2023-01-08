@@ -318,8 +318,11 @@ __Observability__
   * Telemetry
     Built-in Tools in container systems with collecting and transferring data in a centralized system:
     1. __Logs__: Emitted from apps about errors, warnings or debug info.
+       Unix and Linux Programs Three I/O streams (to output logs from containers):\
+       
     2. __Metrics__: Quantitative measurements taken over time. For ex, num of requests or an error rate.
     3. __Traces__: Progression of a request while it's passing thru the system. Are used in a distributed system to provide info about when a request was procssed and how long it took
+    
   
 
 
