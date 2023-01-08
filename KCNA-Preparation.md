@@ -280,25 +280,52 @@ __Autoscaling Objects__
   To distinguish them,  refer [here](#5-knowledge-points)
 
 
+## Cloud Native Application Delivery (CI/CD) and Observability
+
+### Automation
+   
+### CI/CD
+   
+__App Lifecycle__
+   * Write Codes and Version Control
+     > Git: decentralized system that can be used to track changes in your source code
+   
+   * Build: for ex, container image
+   * Extensive and automatic testing of the app
+   * Delivering: for ex, use Kubernete as target platform
 
 
+__Automation and Infrastructure as Code (IaS)__
+
+  > __Continuous Integration__ is the first part of the process and describes the permanent building and testing of the written code. High automation and usage of version control allows multiple developers and teams to work on the same code base.
+
+  > __Continuous Delivery__ is the second part of the process and automates the deployment of the pre-built software. In cloud environments, you will often see that software is deployed to Development or Staging environments, before it gets released and delivered to a production system.
+   
+__Approaches how CI/CD implement changes__
+
+  * Push-based
+    > The pipeline is started and runs tools that make the changes in the platform. Changes can be triggered by a commit or merge request.
+  * Pull-based (GitOps frameworks exs -- Flux, ArgoCD)
+    > An agent watches the git repository for changes and compares the definition in the repository with the actual running state. If changes are detected, the agent applies the changes to the infrastructure.
+    
+    <img width="461" alt="image" src="https://user-images.githubusercontent.com/24993672/211176597-9dab6703-28d9-43ce-bceb-8eb2139566f0.png">
+
+__Observability__
+
+  The concept is similar to Control Theory -- describes how external outputs of systems can be measured to manipulate the behavior of the system\
+  Example: Cruise Control System of A Car: can set the desired speed of the car, which is measured and observed by a person with the speedometer. To maintain the speed in changed conditions (ex. up to mountain), the power of the motor must be modified. 
   
+  * Telemetry
+    Built-in Tools in container systems with collecting and transferring data in a centralized system:
+    1. __Logs__: Emitted from apps about errors, warnings or debug info.
+    2. __Metrics__: Quantitative measurements taken over time. For ex, num of requests or an error rate.
+    3. __Traces__: Progression of a request while it's passing thru the system. Are used in a distributed system to provide info about when a request was procssed and how long it took
   
 
-  
 
 
-  ### Scale and Schedule Pods with workload resources
-  ### Abstract Pods with services and expose them
 
    
    
    
 ## How CO differes from legacy deployments 
-
-
-
-
-## Deliver and monitor your app in a distributed system
-
-
