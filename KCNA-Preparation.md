@@ -7,8 +7,8 @@
 ## Basics of Cloud Native Technologies
 ### 1. Traditional/Legacy apps
 
-Monolithic approach (self0contained and include all the functionality and components)
-Pro: easy to develop and deploy
+Monolithic approach (self-contained and include all the functionality and components)\
+Pro: easy to develop and deploy\
 Con: hard to manage complexity, scale development across multiple teams, implement changes fast, scale the app out efficiently with a lot of load
 
 
@@ -43,7 +43,8 @@ break down your app in smaller pieces which makes them more manageable.
   Horizontal scaling: spawning new compute resources (new copies). \
   Vertical scaling: Change in size within certain hardware limits. 
   > To illustrate the difference between scaling vertically and horizontally, imagine that you have to carry a heavy object that you cannot pick up. You can build muscle to carry it yourself, but your body has an upper limit of strength. That's vertical scaling. You can also call your friends and ask them to help you and share the work. That's horizontal scaling.
-  Configurations: minimum & maximum limit of instances, metric that triggers the scaling -> tune -> run many load tests, analyze the behavior and load balancing while scaled.
+
+  Tune configurations: minimum & maximum limit of instances, metric that triggers the scaling -> run many load tests, analyze the behavior and load balancing while scaled.
 * Serverless\
   Infrastructure as a Service\
   Platform as a Service\
@@ -55,7 +56,8 @@ break down your app in smaller pieces which makes them more manageable.
   
   > Writing small, stateless applications make them a perfect fit for event or data streams, scheduled tasks, business logic or batch processing.
 * Open Standards\
-  How to build and distribute software packages? Containers (with Docker) -- [Open Container Initiative](https://opencontainers.org/) (OCI): image, runtime and distribution specification on how to run, build an distribute containers\
+  How to build and distribute software packages? \
+  Containers (with Docker) -- [Open Container Initiative](https://opencontainers.org/) (OCI): image, runtime and distribution specification on how to run, build an distribute containers\
   __Some Other Standards__:\
   Container Network Interface (CNI): A specification on how to implement networking for Containers.\
   Container Runtime Interface (CRI): A specification on how to implement container runtimes in container orchestration systems.\
