@@ -342,23 +342,31 @@ __Observability__
          To make logs easy to process and searchable, use __structured logging__ (for ex, use structured format like JSON).
          
       2. __Metrics__: Quantitative measurements taken over time. For ex, num of requests or an error rate.
-      3. __Traces__: Progression of a request while it's passing thru the system. Are used in a distributed system to provide info about when a request was procssed and how long it took
-     
-     
-  * Prometheus (open source monitoring system)
-    > It can collect metrics that were emitted by apps and servers as time series data
-    
-    Prometheus data model provides 4 core metrics:
-    1. Counter: Increasing value, ex. request or error count
-    2. Gauge: Increasing or decreasing value, ex. memory size
-    3. Histogram: A sample of observations, ex. request duration or response size
-    4. Summary: Extension of histogram, also provides total count of observations
+         __Prometheus__ (open source monitoring system)
+         > It can collect metrics that were emitted by apps and servers as time series data
 
-    Query lanugage used by Prometheus is __PromQL__ (Prometheus Query Language)\
-    __Ecosystem tools__\
-    __Grafana__ can be used to build dashboards from the collected metrics\
-    __Alertmanager__ Alert monitoring and notification 
+         Prometheus data model provides 4 core metrics:
+         - Counter: Increasing value, ex. request or error count
+         - Gauge: Increasing or decreasing value, ex. memory size
+         - Histogram: A sample of observations, ex. request duration or response size
+         - Summary: Extension of histogram, also provides total count of observations
+
+         Query lanugage used by Prometheus is __PromQL__ (Prometheus Query Language)\
+         __Ecosystem tools__\
+           __Grafana__ can be used to build dashboards from the collected metrics\
+           __Alertmanager__ Alert monitoring and notification 
+      
+      3. __Traces__: Progression of a request while it's passing thru the system. Are used in a distributed system to provide info about like start, finish time, name, tags or a log message. 
+         It describes the tracking of a request while it passes thru the services. \
+         Traces can be stored and analyzed in a tracing system like Jaeger.\
+         __OpenTelemetry__\
+         = OpenTracing + OpenCensus\
+         = a set of app programming interfaces(APIs), software development kits(SDKs) and tools that can be used to integrate telemetry such as metrics, protocols, but especially traces into apps and infrastructures. \
+         The OpenTelemetry clients can be used to export telemetry data in a standarized format to central platforms like Jaeger. 
+     
     
+    
+
     
            
   
