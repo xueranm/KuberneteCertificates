@@ -361,11 +361,16 @@ __Observability__
          Traces can be stored and analyzed in a tracing system like Jaeger.\
          __OpenTelemetry__\
          = OpenTracing + OpenCensus\
-         = a set of app programming interfaces(APIs), software development kits(SDKs) and tools that can be used to integrate telemetry such as metrics, protocols, but especially traces into apps and infrastructures. \
-         The OpenTelemetry clients can be used to export telemetry data in a standarized format to central platforms like Jaeger. 
+         > = a set of app programming interfaces(APIs), software development kits(SDKs) and tools that can be used to integrate telemetry such as metrics, protocols, but especially traces into apps and infrastructures. \
+         > The OpenTelemetry clients can be used to export telemetry data in a standarized format to central platforms like Jaeger. 
      
     
-    
+  * Cost Management
+    Cloud computing allow us to draw from a "infinite" pool of resources and only pay for them when needed (on-demand pricing models). Cost optimization is important. Some ways to do the optimization:
+    - Identify wasted and unused resources (manually find or auto find like autoscaling)   
+    - Right-Sizing
+    - Reserved Instances (Reserve resources pricing method is better if you have good estimate about needed resources for years)
+    - Spot Instances (For batch job or heavy load for a short amount of time. Idea of spot instances is that you get unused resources that have been over-provisioned by the cloud vendor for very low prices, con is that the resources are not reserved and may be taken by others paying "full price".
 
     
            
