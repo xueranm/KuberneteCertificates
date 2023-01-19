@@ -403,3 +403,15 @@ __Observability__
     - Flux: reply completely on CLI
     - Jenkins X: not CNCF
     - Harness: not CNCF, paid service
+
+  #### Knowledges:
+  - Lightweight Kubernetes distribution for IoT and Edge Computing: K3s
+  - Gurantee of pods available on every node: __DaemonSet__ will ensure that one copy of a pod defined in our configuration will always be available on every worker node
+  - __Container Runtime Interface__ allows you to run enable kubelet to use a wide variety of container runtimes, without having a need to recompile the cluster components
+  - Owners mechanism cleans up related resources before deleting an object.
+  - kubectl api-versions can list the available API groups and their versions
+  - The kubectl “api-resources” is a command to view the available resource types as well as the API group they are associated with
+  - Field selectors let you select Kubernetes resources based on the value of one or more resource fields
+
+  
+  
