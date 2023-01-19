@@ -230,7 +230,7 @@ __Workload Objects__
   * Job
   * CronJob
   
-  Visualization tools: KubeView\
+  Visualization tools: KubeView
   
 __Networking Objects__
 
@@ -266,7 +266,7 @@ __Configuration Objects__
   > Suggestion: [Storing configuration in the environment](https://12factor.net/config)
 
   Kubernete: decoupling the configuration from the pods with a ConfigMap\
-  Usage:\
+  Usage:
   * Mount ConfigMap as a volume in Pod
   * Map variables from a ConfigMap to env variables of a Pod
 
@@ -362,7 +362,7 @@ __Observability__
          It describes the tracking of a request while it passes thru the services. \
          Traces can be stored and analyzed in a tracing system like Jaeger.\
          __OpenTelemetry__\
-         = OpenTracing + OpenCensus\
+         = OpenTracing + OpenCensus
          > = a set of app programming interfaces(APIs), software development kits(SDKs) and tools that can be used to integrate telemetry such as metrics, protocols, but especially traces into apps and infrastructures. \
          > The OpenTelemetry clients can be used to export telemetry data in a standarized format to central platforms like Jaeger. 
      
@@ -373,3 +373,11 @@ __Observability__
     - Right-Sizing
     - Reserved Instances (Reserve resources pricing method is better if you have good estimate about needed resources for years)
     - Spot Instances (For batch job or heavy load for a short amount of time. Idea of spot instances is that you get unused resources that have been over-provisioned by the cloud vendor for very low prices, con is that the resources are not reserved and may be taken by others paying "full price".
+
+## Other Knowledge 
+
+### Deployment Strategy
+  * Recreate: Terminate the old version and release the new one. With downtime, no rollback
+  * Blue/Green: when you deploy an exact duuplicate of your workload. You can easily switch back and forth between the Blue and Green environemnt and terminate the old one when you are happy with the state of the new environment.
+  * A/B Testing: release a new version to a subset of users in a precise way (HTTP headers, cookie, weight, etc.). This doesn't come out of the box with Kubernetes, it imply extra work to setup a smarter loadbalancing system.
+  * Canary: Canary is when you deploy your changes and only roll it out for a subset of your users. If there are no reported problems then all users are shifted over to the new environment and the old environment is terminated. Rollback is slow.
