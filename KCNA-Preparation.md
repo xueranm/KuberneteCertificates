@@ -388,3 +388,18 @@ __Observability__
   Reference: \
   https://github.com/ContainerSolutions/k8s-deployment-strategies \
   https://blog.container-solutions.com/kubernetes-deployment-strategies#kubernetes-blue-green
+  
+### Distinguishment
+
+  #### Package, deploy and manage a Kubernetes application?
+  - Helm Charts
+  - Kubernetes Operator
+  - Wrong Choices:
+    - Terraform: it is IaC, intended for deploying infrastructure not applications
+
+  #### CNCF project for CI/CD with both CLI and Web UI
+  - Argo
+  - Wrong Choices:
+    - Flux: reply completely on CLI
+    - Jenkins X: not CNCF
+    - Harness: not CNCF, paid service
