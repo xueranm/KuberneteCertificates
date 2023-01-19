@@ -381,3 +381,10 @@ __Observability__
   * Blue/Green: when you deploy an exact duuplicate of your workload. You can easily switch back and forth between the Blue and Green environemnt and terminate the old one when you are happy with the state of the new environment.
   * A/B Testing: release a new version to a subset of users in a precise way (HTTP headers, cookie, weight, etc.). This doesn't come out of the box with Kubernetes, it imply extra work to setup a smarter loadbalancing system.
   * Canary: Canary is when you deploy your changes and only roll it out for a subset of your users. If there are no reported problems then all users are shifted over to the new environment and the old environment is terminated. Rollback is slow.
+
+
+<img width="802" alt="image" src="https://user-images.githubusercontent.com/24993672/213583195-5bd09e49-3ccf-445d-89e3-ae63b64a2d92.png">
+
+  Reference: \
+  https://github.com/ContainerSolutions/k8s-deployment-strategies \
+  https://blog.container-solutions.com/kubernetes-deployment-strategies#kubernetes-blue-green
