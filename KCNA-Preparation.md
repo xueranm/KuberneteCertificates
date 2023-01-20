@@ -520,3 +520,9 @@ __K3s and K3d__
 
 <img width="1748" alt="image" src="https://user-images.githubusercontent.com/24993672/213818144-155e09d4-d971-47d3-9443-d99e5380444a.png">
 
+__Lightweight K8S distribution comparison__
+
+<img width="1620" alt="image" src="https://user-images.githubusercontent.com/24993672/213818832-875ca122-a843-4d47-8261-04351274dfac.png">
+
+
+  
