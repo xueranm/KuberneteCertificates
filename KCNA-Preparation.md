@@ -503,3 +503,7 @@ Recommended Labels:
 __gRPC__
 
 <img width="1782" alt="image" src="https://user-images.githubusercontent.com/24993672/213630846-9274d6e5-13bc-4272-a9a1-4ae87e8f428c.png">
+
+__Kubelet__
+
+<img width="1641" alt="image" src="https://user-images.githubusercontent.com/24993672/213631415-67d766cd-d139-41a4-9e6b-a30536826166.png">
