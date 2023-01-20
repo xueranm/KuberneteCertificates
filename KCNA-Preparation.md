@@ -481,6 +481,7 @@ __Deployment__
 
 <img width="1260" alt="image" src="https://user-images.githubusercontent.com/24993672/213620163-a7b9b743-10cf-456d-80a3-1f10688425e9.png">
 
+__Namespaces__
+<img width="1546" alt="image" src="https://user-images.githubusercontent.com/24993672/213627772-364537a3-0010-4378-bb61-092a75efb548.png">
 
-  
-  
+
