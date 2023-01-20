@@ -516,4 +516,7 @@ __Monolithic vs. Microservices__
 
 <img width="1151" alt="Monolithic Architecture" src="https://user-images.githubusercontent.com/24993672/213816474-2cf8ea85-466b-4cac-bf17-bc7cc7944830.png">
 
+__K3s and K3d__
+
+<img width="1748" alt="image" src="https://user-images.githubusercontent.com/24993672/213818144-155e09d4-d971-47d3-9443-d99e5380444a.png">
 
