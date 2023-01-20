@@ -424,6 +424,8 @@ __Observability__
   - As part of Cluster Autoscaler graduation to GA we want to guarantee a certain level of scalability limits that Cluster Autoscaler supports. We declare that Cluster Autoscaler scales to 1000 nodes with 30 pods per node.
   - Names of three CNCF landscapes: Cloud-native landscape, Serverless landscape, Member landscape
   - Fission is a fast serverless framework for Kubernetes with a focus on developer productivity and high performance
+  - <img width="934" alt="image" src="https://user-images.githubusercontent.com/24993672/213595572-58eba840-6abd-4291-a7dc-4bdad1b6e97e.png">
+
 
 
 
