@@ -140,7 +140,7 @@ break down your app in smaller pieces which makes them more manageable.
    1. [Kube-apiserver](#kubernetes-api-kube-apiserver-restful-inerface-over-https): where user access the cluster and other components interact with 
    2. etcd: a database that holds the state of the cluster, a standalone project 
    3. [kube-scheduler](KCNA-Preparation.md#scheduling-kube-scheduler): Based on different properties like CPU and memory, it chooses new worker node to fit new workload 
-   4. kube-controller-manager: container different non-terminating control loops (like control flow within lifecycle?) that manager the state of the cluster
+   4. kube-controller-manager: container different non-terminating control loops (like control flow within lifecycle?) that watch and manage the state of the cluster, make or request changes where needed. Try to move the current cluster state closer to the desired state.
    5. cloud-controller-manager (optional): interact with the API of cloud providers to create external resources like load balancers, storage or security groups (for ex, aws resources)
    
    
@@ -412,6 +412,20 @@ __Observability__
   - kubectl api-versions can list the available API groups and their versions
   - The kubectl “api-resources” is a command to view the available resource types as well as the API group they are associated with
   - Field selectors let you select Kubernetes resources based on the value of one or more resource fields
+  - LXC is a well-known Linux container runtime that consists of tools, templates, and library and language bindings. It's pretty low level, very flexible and covers just about every containment feature supported by the upstream kernel
+  - TTL-after-finished Controller prevents a job from living after a certain amount of time when it has finished execution.
+  - Selectors fetch a group of objects based on a key/value pair in Kubernetes
+  - two areas of concern for securing Kubernetes: 
+    1. Securing the cluster components that are configurable 
+    2. Securing the applications which run in the cluster
+  - RBAC API declares four kinds of Kubernetes objects: Role, ClusterRole, RoleBinding and ClusterRoleBinding
+  - EndpointSlices provide a simple way to track network endpoints within a Kubernetes cluster. They offer a more scalable and extensible alternative to Endpoints 
+  - When managing the scale of a group of replicas using the HorizontalPodAutoscaler, it is possible that the number of replicas keep fluctuating frequently due to the dynamic nature of the metrics evaluated. This is sometimes referred to as __thrashing, or flapping__. 
+  - As part of Cluster Autoscaler graduation to GA we want to guarantee a certain level of scalability limits that Cluster Autoscaler supports. We declare that Cluster Autoscaler scales to 1000 nodes with 30 pods per node.
+  - Names of three CNCF landscapes: Cloud-native landscape, Serverless landscape, Member landscape
+  - Fission is a fast serverless framework for Kubernetes with a focus on developer productivity and high performance
+
+
 
   
   
