@@ -475,6 +475,7 @@ Deployment: Is a blueprint for a pod (think Launch Template)
 <img width="1796" alt="image" src="https://user-images.githubusercontent.com/24993672/213618435-dc0bb058-6f5e-42ad-87c2-dfb4966269d6.png">
 
 
+<img width="754" alt="image" src="https://user-images.githubusercontent.com/24993672/213619231-34c8682b-4227-4682-a4a3-f2e63cd0ed45.png">
 
 
   
