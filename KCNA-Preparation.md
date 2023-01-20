@@ -507,3 +507,13 @@ __gRPC__
 __Kubelet__
 
 <img width="1641" alt="image" src="https://user-images.githubusercontent.com/24993672/213631415-67d766cd-d139-41a4-9e6b-a30536826166.png">
+
+__Vm vs. Container__
+
+<img width="1171" alt="Virtual Machines (VMs) do not mate the best use of space  Containers" src="https://user-images.githubusercontent.com/24993672/213816395-845f0994-ad44-43a4-b39b-9e04eaf68d63.png">
+
+__Monolithic vs. Microservices__
+
+<img width="1151" alt="Monolithic Architecture" src="https://user-images.githubusercontent.com/24993672/213816474-2cf8ea85-466b-4cac-bf17-bc7cc7944830.png">
+
+
