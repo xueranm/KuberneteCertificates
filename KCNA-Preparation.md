@@ -490,3 +490,9 @@ __Endpoints__
 
 <img width="750" alt="image" src="https://user-images.githubusercontent.com/24993672/213628734-1016285d-2f61-4b58-b4e6-b40fc2bcaab1.png">
 
+__Selector__
+
+<img width="1010" alt="image" src="https://user-images.githubusercontent.com/24993672/213629397-bede252a-cbda-4c3b-b423-3de88e823e71.png">
+
+<img width="750" alt="image" src="https://user-images.githubusercontent.com/24993672/213628734-1016285d-2f61-4b58-b4e6-b40fc2bcaab1.png">
+
