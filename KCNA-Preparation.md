@@ -471,6 +471,9 @@ ReplicaSets: Maintain a stable set of replica pods running at a given time. Can 
 
 Deployment: Is a blueprint for a pod (think Launch Template)
 
+#### Controle Plane and Worker Nodes
+<img width="1796" alt="image" src="https://user-images.githubusercontent.com/24993672/213618435-dc0bb058-6f5e-42ad-87c2-dfb4966269d6.png">
+
 
 
 
